@@ -19,7 +19,7 @@ export class Connection {
                 afterCreate: (conn, done) => {
                     conn.query('SET NAMES utf8', (err) => {
                         done(err, conn);
-                    })
+                    });
                 }
             },
             debug: true,
